@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic,latin-ext");
+@icon-font-path : "../fonts/icon.png";
+@icon-font-name : "glyphicons-halflings-regular";
+body {
+  font-family: "Roboto", sans-serif;
+  background: #ccce66;
+  /* Цвет фона */
+  /*width:100%;*/
+  height: 100vh;
+  border: 10px double black; }
+
+ul, li {
+  font-family: "Roboto", sans-serif;
+  background: #ccce66;
+  /* Цвет фона Blog,Potfolio,About */ }
+
+.main {
+  height: 80vh; }
+  .main .grid-img {
+    width: 100%; }
+
+/*
+body{
+	height: 100vh;
+	
+  @media (min-width: 480px){
+	.body{
+	border: 10px double black;
+	.auto-clear .col-xs-8:nth-child(12n+1){clear:left;}
+	}
+}	
+}
+*/
+@media screen and (max-width: 568px) {
+  body {
+    border: 10px double black; }
+  p {
+    font-size: 25px; }
+  grid-item {
+    min-width: 320px;
+    display: block;
+    clear: left; }
+  img {
+    max-width: 38%;
+    /* 2 изображения в ряд */
+    height: auto;
+    padding: 1%;
+    /* небольшие оступы для изображений */
+    float: left;
+    /* Выравнивание по левому краю */ } }
